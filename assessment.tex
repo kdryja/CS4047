@@ -74,34 +74,46 @@ Bio-inspired computing is an ever-expanding area within computer science attempt
 
 \section{ARTIFICIAL IMMUNE SYSTEM}
 
-Artificial Immune System (AIS) draws directly from biology of humans' (and not only) immune systems - organism's first line of defence against unwanted cells or viruses. The exact details and biological explanation behind those concepts can get incredibly complex very quickly, so for the sake of brevity, we can distinguish two major actors: antibodies (released by B / T cells) and antigens (the viruses). The main goal of antibodies is to identify and destroy to antigens - most importantly, the fight is usually a collective effort of the entire system, rather than of the individual cells. Moreover, one of the crucial concepts that carries over from biology into computing application is "self" and "not-self". The immune system should be able to distinguish between bodies belonging to the organism ("self") and the ones that haven't been recognized and thus should be eliminated ("not-self").
+Artificial Immune System (AIS) draws directly from biology of humans' (and not only) immune systems - organism's first line of defence against unwanted cells or viruses. The exact details and biological explanation behind those concepts can get incredibly complex very quickly, so for the sake of brevity, we can distinguish two major actors: antibodies (released by B / T cells) and antigens (the viruses). The main goal of antibodies is to identify and destroy to antigens - most importantly, the fight is usually a collective effort of the entire system, rather than of the individual cells. Moreover, one of the crucial concepts that carries over from biology into computing application is "self" and "not-self". The immune system should be able to distinguish between bodies belonging to the organism ("self") and the ones that haven't been recognized and thus should be eliminated ("not-self"). Finally, the detection itself is performed either via Clonal Selection or Negative Selection. The former is based on cloning and mutating the bodies with the highest affinity and the later eliminates the bodies not fulfilling determined criteria (e.g., affinity, often presented as Euclidean distance to the nearest antibody).
 
 \subsection{Applications}
-One of the more beneficial examples to our business would certainly be stock prediction. Gunasekaran et al. \cite{gunasekaran2011evaluation} presented an experiment where AIS was deployed to measure the trends and fluctuations on Bombay stock exchange. By feeding data for the year of 2009, the scientists were able to predict with a high accuracy the SENSEX Index for the year of 2010 (Root Mean Square Error of 103.106). While constructing the model, various indicators were used, such as Money Flow Index or Simple Moving Average. The study was researching the ultimate error difference between application of AIS and ANN - the former having achieved better results.
+One of the more beneficial examples to our business would certainly be stock prediction. Gunasekaran et al. \cite{gunasekaran2011evaluation} presented an experiment where AIS was deployed to measure the trends and fluctuations on Bombay stock exchange. By feeding data for the year of 2009, the scientists were able to predict with a high accuracy the SENSEX Index for the year of 2010 (Root Mean Square Error of 103.106). While constructing the model, various indicators were used, such as Money Flow Index or Simple Moving Average. The study was researching the ultimate error difference between application of AIS and ANN - the former having achieved better results. Figure \ref{fig:stock} shows the exact difference between the actual SENSEX index for Bombai stock exchange, index predicted by AIS and index predicted by ANN. \newline
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth]{graph}
+  \caption{Comparison of AIM and ANN for stock prediction \cite{gunasekaran2011evaluation}}
+  \label{fig:stock}
+\end{figure}
+Brabazon et al. \cite{brabazon2006biologically} also describes how Negative Selection can be used to determine set of companies that are due to fail and which ones will remain stable. In that particular scenario, "self" can be defined as healthy companies, whereas detectors would be build up from the historical financial data. Then, through the process of selection based on affinity to the detectors, a new set would be detected. Finally, all companies inside "not-self" set would be determined as failing or about to fail. This again could be utilised during decision process for investments. 
 
-\subsection{Strengths aim at 150 words} 
-Lorem ipsum
 
-\subsection{Weaknesses aim at 150 words}
-Lorem ipsum
+\subsection{Strengths aim at 100 words} 
+Detectors hold the memory of previous 
 
+The ability of 
+
+\subsection{Weaknesses aim at 100 words}
+Considering the example showing detection of failing companies - which utilizes the negative selection algorithm - one of the biggest challenges would be to handle the ever-growing set of "self", that is the number of companies is going to keep increasing, thus making this task more and more computationally expensive - as presented in the book \cite{brabazon2006biologically}.
+
+Additionally, Timmis argues \cite{timmis2004overview} there is no precise field or application which AIM were designed for. This can be seen as both advantage and disadvantage, as it can be applied to a wider range of problems, al
 
 \section{Artificial Neural Networks 150 words}
-Lorem ipsum
-
-\subsection{Strengths aim at 150 words}
-Lorem ipsum
-
-\subsection{Weaknesses aim at 150 words}
 Lorem ipsum
 
 \subsection{Applications aim at 150 words}
 Lorem ipsum
 
+\subsection{Strengths aim at 100 words}
+Lorem ipsum
+
+\subsection{Weaknesses aim at 100 words}
+Lorem ipsum
+
+
 
 \section{COMBINATIONS - aim at 150 words}
 
-Lorem ipsum
+As useful individual methods are, the combination of different bio-inspired computation methods allows for even more powerful and precise machine learning paradigms. One of the most prominent examples being NeuroEvolution of Augmenting Topologies (NEAT) \cite{stanley2002evolving} presented by researches at University of Texas at Austin. The technique combines genetic algorithms along with artificial neural networks, allowing the latter to evolve and change it's layout (such as number and location of particular nodes in various layers across the network). That way the ANN can adapt and evolve according to the outside factors. Brabazon et al. Proposed applications 
 
 \section{CONCLUSIONS - aim at 200 words}
 
@@ -125,7 +137,7 @@ Lorem ipsum\cite{gunasekaran2011evaluation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{unsrt}
-\bibliography{assessment}
+\bibliography{refs}
 
 \end{document}
 
