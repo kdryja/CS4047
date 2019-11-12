@@ -97,7 +97,7 @@ Brabazon et al. \cite{brabazon2006biologically} also describes how Negative Sele
 
 \textbf{Jack-of-All-Trades:} Timmis argues \cite{timmis2004overview} that there is no precise field or application which AIS were designed for. This can be seen as both advantage and disadvantage, as it can be applied to a wider range of problems, but at the same time lack of specialization makes it susceptible to exploring breadth of solutions, rather than their depth. For the majority of those problem spaces there already exists a specialised solution yielding better results than AIS \cite{garrett2005we}.
 
-\section{Artificial Neural Networks 150 words}
+\section{Artificial Neural Networks}
 Artificial Neural Networks (ANN) is a slightly different approach to problem solving, also deriving directly from the behaviour of living organisms. In that particular case, brain is considered. To put the things relatively simple, brain contains roughly 100 billion neurons \cite{lent2012many} - each accepting arbitrary input and activating (i.e. passing the information further) based on pre-determined function. We might not be capable to efficiently run and simulate the whole 100 billion of neurons, but we can introduce a simplified model.
 
 \begin{figure}[h!]
@@ -111,11 +111,11 @@ Figure \ref{fig:ann} shows an example Neural Net capable of accepting up to N in
 
 Furthermore, the network can be further trained by adjusting the weights \(w_n\). For a normal feed-forward neural network it is usually achieved through backpropagation algorithm. After several runs on known data, we can introduce unknown elements and derive the relations.
 
-\subsection{Applications aim at 150 words}
+\subsection{Applications}
 
 When discussing AIS, I presented a use-case where AIS and ANN where faced together in order to predict stock index for Indian market. In fact, the application of neural nets is much wider, consisting of scenarios such as image recognition \cite{tsai1995applying} or further financial modelling. Guresen et al. \cite{guresen2011using} discussed an approach of utilising Multi-Layer Perceptron models for financial forecasting, in particular NASDAQ index. The net was capable of estimating Mean Square Error and Mean Absolute Deviate for future dates, after being trained with past data, hinting at usefulness of the approach in data mining and financial modelling.
 
-\subsection{Strengths aim at 100 words}
+\subsection{Strengths}
 \textbf{Partial data:} neural nets are designed to handle missing or partial data that's fed into it - once it has been trained for several iterations through backpropagation algorithm. It can also form relations between particular input nodes which haven't been specified before.
 
 \textbf{Fault tolerant:} incomplete or wrong data in one of the inputs does not nullify the results obtained from the network. Those inputs would usually end up with greatly decreased weights, overall limiting their importance - which is achieved through again thanks to backpropagation or other learning algorithms.
@@ -129,7 +129,7 @@ When discussing AIS, I presented a use-case where AIS and ANN where faced togeth
 
 As useful as individual methods are, the combination of different bio-inspired computation methods allows for even more powerful and precise machine learning paradigms. One of the most prominent examples being NeuroEvolution of Augmenting Topologies (NEAT) \cite{stanley2002evolving} presented by researches at University of Texas at Austin. The technique combines genetic algorithms along with artificial neural networks, enabling the latter to evolve and change it's layout, such as number and location of particular input nodes in various layers across the network or the weights themselves. That way an ANN can adapt and evolve according to the outside factors. There exists further implementations of neuroevolution algorithms, such as Enforced Subpopulations \cite{ha2015esp}, which hints at the novelty and usefulness of combining various evolutionary paradigms.
 
-\section{CONCLUSIONS - aim at 100 words}
+\section{CONCLUSIONS}
 
 As I pointed out in the first paragraph, the bio-inspired computing is still a relatively young approach with the possibilities of applying it to many, perhaps previously considered very difficult (such as TSP) problems. Majority of modern machine learning research focus surrounds concepts such as GA or ANN, with great results. Considering the problem space of financial companies (e.g. forecasting with partial data or pattern recognition in analyses), it is a field that could greatly benefit from those technologies and is worth further research \& investments.
 
